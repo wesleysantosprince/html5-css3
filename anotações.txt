@@ -1,0 +1,9 @@
+M01 - Conteúdos básicos, preparação do ambiente, semântica HTML5, textos, títulos, ligações, multimídias, estilos.
+
+M02 - Fundamentos do design, psicologia das cores, tipografia, elementos CSS, modelo de caixas, wireframe, responsividade.
+
+M03 - Versionamento de software, hospedagem de sites estáticos, tabelas.
+
+M04 - Quadros em linha, formulários, media queries, mobile first.
+
+M05 - Flexbox, grid Layout, projeto final. 

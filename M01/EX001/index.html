@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/html.ico" type="image/x-icon"> <!--insere o favicon do site-->
+    <title>Meu primeiro</title>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Esse é o meu primeiro documento HTML!</p>
+    <p>Criando um site...</p>
+    <hr>
+    <h2>Parágrafros e quebras de linha</h2>
+    <p>Você pode escrever um parágrafo de qualquer jeito. 
+        <br> Basta colocar tudo no meio do par de tags &lt;p&gt; e &lt;/p&gt; <!--Less Than e Greater Than-->
+    </p>
+    <p>Alguns símbolos especiais: <br>
+        &copy;
+        &euro;
+        &reg;
+        &cent;
+    </p>
+    <p>Alguns emogis: <a href="http://emojipedia.org"></a> <br>
+        &#x1F596;
+        &#x1F913;
+    </p>
+    <hr>
+    <h2>Testando carga e imagens</h2>
+    <img src="images/logo html - 200.png" alt="Logo HTML5">
+    <img src="images/logo css - 200.png" alt="Logo CSS3">
+    <hr>
+    <h2>Principais formatações</h2>
+    <h3>Negrito / Destaque</h3>
+    <p>Nesta frase tenho um <strong>termo em destaque</strong> usando a tag &lt;strong/&gt; pois é semântica</p>
+    <h3>Itálico / Ênfase</h3>
+    <p>Nesta frase tenho um <em>termo em ênfase</em> usando a tag &lt;em/&gt; pois é semântica</p>
+    <h3>Texto marcado</h3>
+    <p>Podemos criar também um <mark>texto marcado</mark> usando a tag &lt;mark/&gt;</p>
+    <p>Mudamos a cor do <mark style="background-color: rgb(0, 255, 85);">texto marcado</mark> usando a tag CSS3 &lt;style/&gt; dentro da tag &lt;mark/&gt;</p>
+    <h3>Texto grande / pequeno</h3>
+    <p>Para criar um <small>texto pequeno</small> podemos usar a tag &lt;small/&gt;</p>
+    <p>Para criar um </p>
+    <h3>Texto deletado / inserido</h3>
+    <p>Podemos marcar como <del>texto excluído</del> aquele que não deve ser considerado com a tag &lt;del/&gt;</p>
+    <p>O <ins>texto que foi inserido</ins> por sua vez com a tag &lt;ins/&gt; </p>
+    <h3>Texto sobrescrito / subscrito</h3>
+    <p>O texto sobrescrito como: x<sup>10 com a tag &lt;sup/&gt;</sup></p>
+    <p>Já o texto subscrito como: H<sub>2</sub>O com a tag &lt;sub/&gt;</p>
+    <hr>
+    <h3>Código-fonte</h3>
+    <p>O comando "document.getElement('teste')" é escrito em JS e para que o formato fique visívelmente melhor, podemos usar a tag &lt;code/&gt;, ficando assim: <br> <code>document.getElement('teste')</code>,<br> podemos usar para escritas em outras linguagens também</p>
+    <h3>Citações simples</h3>
+    <p><q>O computador é um burro muito rápido</q></p>
+    <h3>Citações completas</h3>
+    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+    <blockquote cite="https://books.google.com.br/books/about/HTML_XHTML_e_CSS_Para_Leigos.html?id=E8ZtDwAAQBAJ&redir_esc=y"> A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.</blockquote>
+    <h3>Abreviações</h3>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. com a tag &lt;abbr/&gt;</p>
+    <hr>
+    <h2>Listas</h2>
+    <p>Para listas usamos a tag &lt;li/&gt; (no HTML o fechamento dessa tag é opcional) + a tag do tipo de lista que queremos e "type" se quisermos mudar o tipo delas</p>
+    <h3>Listas Ordenadas</h3>
+    <p>Tag &lt;ol/&gt;:</p>
+    <ol>
+        <li>Acordar</li>
+        <li>Treinar</li>
+        <li>Estudar</li>
+    </ol>
+    <h3>Listas Não Ordenadas</h3>
+    <p>Tag &lt;ul/&gt;:</p>
+    <ul>
+        <li>Pão</li>
+        <li>Manteiga</li>
+        <li>Leite</li>
+    </ul>
+    <h3>Listas Mistas</h3>
+    <ol>
+        <li>Prioridade:</li>
+        <ul>
+            <li>Estudar</li>
+            <li>Treinar</li>
+            <li>Se alimentar bem</li>
+            <li>Dormir bem</li>
+        </ul>
+        <li>Não prioridade:</li>
+        <ul>
+            <li>Festas</li>
+            <li>Madrugada</li>
+        </ul>
+    </ol>
+    <h3>Lista de Definições</h3>
+    <p>Tag &lt;dl/&gt; + &lt;dt/&gt; e &lt;dd/&gt;:</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação da interação de um site.</dd>
+    </dl>
+    <hr>
+    <h2>Links</h2>
+    <h3>Links Externos</h3>
+    <p>Tag &lt;a/&gt; + 'target="_blank"'' e 'rel="external"':</p>
+    <p>Acesse o <a href="https://www.instagram.com/" target="_blank" rel="external">Instagram</a></p>
+    <p>Acesse o <a href="https://www.youtube.com/" target="_blank" rel="external">YouTube</a></p>
+    <h3>Links Internos</h3>
+    <p>Tag &lt;a/&gt; + 'rel="next"', etc.:</p>
+    <p>Acesse a <a href="page002.html" rel="next">segunda página</a> do site</p>
+    <h3>Links para Download</h3>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf">baixar o pdf do capítulo 10</a></li>
+    </ul>
+</body>
+</html>
