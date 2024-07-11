@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            /* vertical-align: top; */
+        }
+        thead, tfoot{
+            background-color: #383838;
+            color: white;
+        }
+        /* cabeçalho fixo */
+        thead > tr > th{ 
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+        td.abr{
+            text-align: center;
+        }
+        td.num{
+            text-align: right;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Anatomia básica</h1>
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+        <tr>
+            <td>B1</td>
+            <td>B2</td>
+            <td>B3</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>D1</td>
+            <td>D2</td>
+            <td>D3</td>
+        </tr>
+    </table>
+    <table>
+        <caption>Top 5 Estados Brasileiros Mais Populosos</caption>
+        <h1>Anatomia de Tabela grande</h1>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">Abreviação</th>
+                <th scope="col" style="width: 110px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="abr">SP</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="abr">MG</td>
+                <td class="num">20 539 989</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="abr">RJ</td>
+                <td class="num">16 055 174</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="abr">BA</td>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="abr">RS</td>
+                <td class="num">11 882 965</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="2">Total</th>
+                <td class="num">107 030 992</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <br>
+</body>
+</html>
