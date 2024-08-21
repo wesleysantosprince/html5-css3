@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testes de formulário</h1>
+    <form action="cadastro.php" method="POST">
+        <!-- utilizar o método POST sempre que enviar dados sensíveis -->
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" placeholder="user">
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" placeholder="password">
+        </p>
+        <!--
+            required serve para tornar obrigatório o      
+            preenchimento dos campos 
+        
+            min/maxlength serve para definir o tamanho mín ou máx dos campos 
+        -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        <br>
+        
+        <p>
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome" required minlength="3">
+        </p>
+        <p>
+            <label for="imean">Média: </label>
+            <input type="number" name="mean" id="imean"
+            required step="0.1">
+        </p>
+        <p>
+            <label for="imes">Período: </label>
+            <input type="month" name="mes" id="imes" value="2024-08">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        <br>
+
+        <p>
+            <label for="idia">Dia: </label>
+            <input type="date" name="dia" id="idia" value="2024-08-21" required>
+            <label for="ihora">Hora: </label>
+            <input type="time" name="hora"
+            id="ihora" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
