@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulários</title>
     <style>
         *{
             font-family: Arial, Helvetica, sans-serif;
@@ -11,7 +11,7 @@
     </style>
 </head>
 <body>
-    <h1>Testes de formulário</h1>
+    <h1>Diferentes controles de formulário</h1>
     <form action="cadastro.php" method="POST">
         <!-- utilizar o método POST sempre que enviar dados sensíveis -->
         <p>
@@ -62,6 +62,25 @@
             <input type="time" name="hora"
             id="ihora" required>
         </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        <br>
+
+        <fieldset>
+            <legend>Dados de contato</legend>
+            <p>
+                <label for="iemal">Email: </label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx) xxxxx-xxxx">
+            </p>
+            <!-- Estudar mais sobre RegEx -->
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
